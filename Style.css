@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(back1.jpeg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.title {
+    font-size: 2.5em;
+    color: rgb(145, 97, 223);
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.search-bar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(8, 8, 8);
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.6);
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff5722;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+#whetherdetails {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #00bcd4, #5e7ab8);
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(75, 80, 49, 0.5);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weather-card:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #00bcd4, #4caf50);
+    box-shadow: 0 16px 32px rgba(212, 237, 90, 0.6);
+}
+
+.weather-card .weather-info {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.weather-card .weather-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #ffcc00;
+}
